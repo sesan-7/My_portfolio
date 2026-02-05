@@ -8,7 +8,7 @@ import { Github, Linkedin, Mail, Send, MapPin, Phone } from "lucide-react";
 export default function Contact() {
   const form = useRef();
   const [status, setStatus] = useState("");
-
+//c
   const sendEmail = (e) => {
     e.preventDefault();
     setStatus("sending");
