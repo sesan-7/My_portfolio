@@ -1,4 +1,7 @@
-import { motion } from "framer-motion";
+
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"; // Fix: Restoration of motion import
+
 import { fadeUp, staggerContainer } from "../animation";
 
 export default function Projects() {

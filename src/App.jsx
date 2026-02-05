@@ -78,17 +78,13 @@ import Experience from "./components/Experience";
 import { useTheme } from "./context/ThemeContext";
 
 function App() {
-  // ✅ Hooks must be called at the top, outside of JSX
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
       {/* Optional debug theme toggle */}
-      <div className="fixed top-4 right-4 flex flex-col items-center z-50">
+      <div className="fixed top-4 right-4 flex flex-col items-center z-50 pointer-events-none opacity-0">
         <p className="mb-2 text-sm">Current theme: {theme}</p>
-        {/* <button onClick={toggleTheme} className="btn-primary">
-          Toggle Theme
-        </button> */}
       </div>
 
       {/* Main sections */}

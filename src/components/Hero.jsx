@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { fadeUpItem, fadeUpStagger } from "../animation";
 import profileImg from "../assets/profile.png";
